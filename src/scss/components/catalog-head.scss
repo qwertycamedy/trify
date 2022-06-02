@@ -1,0 +1,40 @@
+.cat-head {
+  background: var(--light-g);
+  overflow: hidden;
+  margin-bottom: 20px;
+
+  &__inner {
+    position: relative;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  &__info {
+    max-width: 188px;
+  }
+
+  &__title {
+    margin-bottom: 20px;
+  }
+
+  &__img-outer {
+    position: absolute;
+    top: 0;
+    height: 100%;
+    right: -98px;
+    &:before {
+      width: 100%;
+      height: 198px;
+      background: linear-gradient(0deg, #F4F4F4 0%, rgba(244, 244, 244, 0) 50.06%);
+      content: '';
+      position: absolute;
+      bottom: -1px;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+  }
+
+
+}

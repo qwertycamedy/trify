@@ -1,0 +1,30 @@
+.popular {
+  margin-bottom: 60px;
+
+  &__header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 32px;
+  }
+
+  &__slider {
+    &-slide {
+      height: 360px;
+      box-sizing: border-box;
+      width: 284px !important;
+      border: 1px solid var(--grey);
+    }
+
+    &-content {
+      height: inherit;
+    }
+  }
+
+  &__card {
+    box-sizing: border-box;
+    height: 360px;
+    border: unset !important;
+
+  }
+}

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="ru" class="page">
+
+@include('partials/head.html')
+
+<body class="page__body">
+  <div class="site-container">
+    @include('partials/header.html')
+
+    <main class="main">
+      @include('partials/cart-head.html')
+
+      <section class="cart-empty">
+        <div class="container">
+          <div class="cart-empty__inner">
+            <h1 class="cart-empty__title hTwo">Корзина пустая</h1>
+            <p class="cart-empty__text">
+              Ваша корзина пустая, перейдите в магазин и найдите то что вам по душе
+            </p>
+            <a class="cart-empty__link uncol-btn" href="index.html">Перейти в магазин</a>
+          </div>
+        </div>
+      </section>
+
+      @include('partials/popular-recent.html')
+    </main>
+
+    @include('partials/footer.html')
+    @include('partials/modals.html')
+  </div>
+</body>
+
+</html>

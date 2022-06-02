@@ -1,0 +1,700 @@
+<!DOCTYPE html>
+<html lang="ru" class="page">
+
+@include('partials/head.html')
+
+<body class="page__body">
+  <div class="site-container">
+    @include('partials/header.html')
+
+    <main class="main">
+      <section class="cat-head faq-head profile-head">
+        <div class="container">
+          <div class="cat-head__inner">
+            <div class="cat-head__info">
+              <div class="breadcrumbs">
+                <ul class="breadcrumbs__list list-reset">
+                  <li class="breadcrumbs__list-item">
+                    <a class="breadcrumbs__list-link" href="index.html">
+                      Главная
+                    </a>
+                  </li>
+                  <li class="breadcrumbs__list-item">
+                    <a class="breadcrumbs__list-link" href="#">
+                      Мой профиль
+                    </a>
+                  </li>
+                </ul>
+              </div>
+              <h1 class="cat-head__title hOne">Мой профиль</h1>
+            </div>
+            <div class="cat-head__img-outer">
+              <picture>
+                <source srcset="img/profile-head.avif" type="image/avif">
+                <source srcset="img/profile-head.webp" type="image/webp">
+                <img loading="lazy" src="img/profile-head.png" class="image" width="654" height="100%" alt="img">
+              </picture>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="profile">
+        <h3 class="visually-hidden">Скрытый заголовок</h3>
+        <div class="container">
+          <div class="profile__inner">
+            <div class="profile__tab">
+              <ul class="profile__tab-btn-list list-reset">
+                <li class="profile__tab-btn-list-item">
+                  <a class="profile__tab-btn btn-reset" href="profile-personal.html">
+                    Персональные данные
+                    <svg class="icon-10">
+                      <use xlink:href="img/sprite.svg#arrow-right"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="profile__tab-btn-list-item">
+                  <a class="profile__tab-btn btn-reset" href="profile-address.html">
+                    Адрес
+                    <svg class="icon-10">
+                      <use xlink:href="img/sprite.svg#arrow-right"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="profile__tab-btn-list-item">
+                  <a class="profile__tab-btn btn-reset" href="profile-orders.html">
+                    Мои заказы
+                    <svg class="icon-10">
+                      <use xlink:href="img/sprite.svg#arrow-right"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="profile__tab-btn-list-item">
+                  <a class="profile__tab-btn btn-reset" href="profile-cards.html">
+                    Сохраненные карты
+                    <svg class="icon-10">
+                      <use xlink:href="img/sprite.svg#arrow-right"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="profile__tab-btn-list-item">
+                  <button class="profile__exit-btn btn-reset">
+                    Выйти
+                    <svg class="icon-10">
+                      <use xlink:href="img/sprite.svg#arrow-right"></use>
+                    </svg>
+                  </button>
+                </li>
+              </ul>
+              <div class="profile__tab-content-outer">
+                <div class="profile__tab-content active" id="profile-3">
+                  <div class="profile-orders active">
+                    <h5 class="profile__tab-content-title">
+                      Мои заказы
+                    </h5>
+                    <div class="profile-orders__card-outer">
+                      <div class="profile-orders__card">
+                        <div class="profile-orders__card-info">
+                          <div class="profile-orders__card-text">
+                            <span class="profile-orders__card-name">
+                              Номер заказа:
+                            </span>
+                            <span class="profile-orders__card-data">
+                              673290789
+                            </span>
+                          </div>
+                          <div class="profile-orders__card-text">
+                            <span class="profile-orders__card-name">
+                              Дата доставки:
+                            </span>
+                            <span class="profile-orders__card-data">
+                              673290789
+                            </span>
+                          </div>
+                          <div class="profile-orders__card-text">
+                            <span class="profile-orders__card-name">
+                              Статус:
+                            </span>
+                            <span class="profile-orders__card-data">
+                              Ожидание доставки
+                            </span>
+                          </div>
+                          <div class="profile-orders__card-text">
+                            <span class="profile-orders__card-name">
+                              Стоимость заказа:
+                            </span>
+                            <span class="profile-orders__card-data">
+                              124 599 ₴
+                            </span>
+                          </div>
+                        </div>
+                        <div class="profile-orders__card-actions">
+                          <div class="profile-orders__card-slider swiper">
+                            <div class="profile-orders__card-slider-wrapper swiper-wrapper">
+                              <div class="profile-orders__card-slider-slide swiper-slide">
+                                <div class="profile-orders__card-slider-content">
+                                  <picture>
+                                    <source srcset="img/profile-orders-1.avif" type="image/avif">
+                                    <source srcset="img/profile-orders-1.webp" type="image/webp">
+                                    <img loading="lazy" src="img/profile-orders-1.png" class="image" width="50"
+                                      height="50" alt="img">
+                                  </picture>
+                                </div>
+                              </div>
+                              <div class="profile-orders__card-slider-slide swiper-slide">
+                                <div class="profile-orders__card-slider-content">
+                                  <picture>
+                                    <source srcset="img/profile-orders-1.avif" type="image/avif">
+                                    <source srcset="img/profile-orders-1.webp" type="image/webp">
+                                    <img loading="lazy" src="img/profile-orders-1.png" class="image" width="50"
+                                      height="50" alt="img">
+                                  </picture>
+                                </div>
+                              </div>
+                              <div class="profile-orders__card-slider-slide swiper-slide">
+                                <div class="profile-orders__card-slider-content">
+                                  <picture>
+                                    <source srcset="img/profile-orders-1.avif" type="image/avif">
+                                    <source srcset="img/profile-orders-1.webp" type="image/webp">
+                                    <img loading="lazy" src="img/profile-orders-1.png" class="image" width="50"
+                                      height="50" alt="img">
+                                  </picture>
+                                </div>
+                              </div>
+                              <div class="profile-orders__card-slider-slide swiper-slide">
+                                <div class="profile-orders__card-slider-content">
+                                  <picture>
+                                    <source srcset="img/profile-orders-1.avif" type="image/avif">
+                                    <source srcset="img/profile-orders-1.webp" type="image/webp">
+                                    <img loading="lazy" src="img/profile-orders-1.png" class="image" width="50"
+                                      height="50" alt="img">
+                                  </picture>
+                                </div>
+                              </div>
+                              <div class="profile-orders__card-slider-slide swiper-slide">
+                                <div class="profile-orders__card-slider-content">
+                                  <picture>
+                                    <source srcset="img/profile-orders-1.avif" type="image/avif">
+                                    <source srcset="img/profile-orders-1.webp" type="image/webp">
+                                    <img loading="lazy" src="img/profile-orders-1.png" class="image" width="50"
+                                      height="50" alt="img">
+                                  </picture>
+                                </div>
+                              </div>
+                              <div class="profile-orders__card-slider-slide swiper-slide">
+                                <div class="profile-orders__card-slider-content">
+                                  <picture>
+                                    <source srcset="img/profile-orders-1.avif" type="image/avif">
+                                    <source srcset="img/profile-orders-1.webp" type="image/webp">
+                                    <img loading="lazy" src="img/profile-orders-1.png" class="image" width="50"
+                                      height="50" alt="img">
+                                  </picture>
+                                </div>
+                              </div>
+                              <div class="profile-orders__card-slider-slide swiper-slide">
+                                <div class="profile-orders__card-slider-content">
+                                  <picture>
+                                    <source srcset="img/profile-orders-1.avif" type="image/avif">
+                                    <source srcset="img/profile-orders-1.webp" type="image/webp">
+                                    <img loading="lazy" src="img/profile-orders-1.png" class="image" width="50"
+                                      height="50" alt="img">
+                                  </picture>
+                                </div>
+                              </div>
+                              <div class="profile-orders__card-slider-slide swiper-slide">
+                                <div class="profile-orders__card-slider-content">
+                                  <picture>
+                                    <source srcset="img/profile-orders-1.avif" type="image/avif">
+                                    <source srcset="img/profile-orders-1.webp" type="image/webp">
+                                    <img loading="lazy" src="img/profile-orders-1.png" class="image" width="50"
+                                      height="50" alt="img">
+                                  </picture>
+                                </div>
+                              </div>
+                            </div>
+                            <button class="profile-orders__card-slider-prev btn-reset">
+                              <svg class="icon-20">
+                                <use xlink:href="img/sprite.svg#big-arrow-right"></use>
+                              </svg>
+                            </button>
+                            <button class="profile-orders__card-slider-next btn-reset">
+                              <svg class="icon-20">
+                                <use xlink:href="img/sprite.svg#big-arrow-right"></use>
+                              </svg>
+                            </button>
+                          </div>
+                          <div class="profile-orders__card-btn-outer">
+                            <button class="profile-orders__card-more btn-reset col-btn">
+                              Подробнее
+                            </button>
+                            <a class="profile-orders__card-track uncol-btn" href="#">Отследить</a>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="profile-orders__card">
+                        <div class="profile-orders__card-info">
+                          <div class="profile-orders__card-text">
+                            <span class="profile-orders__card-name">
+                              Номер заказа:
+                            </span>
+                            <span class="profile-orders__card-data">
+                              673290789
+                            </span>
+                          </div>
+                          <div class="profile-orders__card-text">
+                            <span class="profile-orders__card-name">
+                              Дата доставки:
+                            </span>
+                            <span class="profile-orders__card-data">
+                              673290789
+                            </span>
+                          </div>
+                          <div class="profile-orders__card-text">
+                            <span class="profile-orders__card-name">
+                              Статус:
+                            </span>
+                            <span class="profile-orders__card-data">
+                              Ожидание доставки
+                            </span>
+                          </div>
+                          <div class="profile-orders__card-text">
+                            <span class="profile-orders__card-name">
+                              Стоимость заказа:
+                            </span>
+                            <span class="profile-orders__card-data">
+                              124 599 ₴
+                            </span>
+                          </div>
+                        </div>
+                        <div class="profile-orders__card-actions">
+                          <div class="profile-orders__card-slider swiper">
+                            <div class="profile-orders__card-slider-wrapper swiper-wrapper">
+                              <div class="profile-orders__card-slider-slide swiper-slide">
+                                <div class="profile-orders__card-slider-content">
+                                  <picture>
+                                    <source srcset="img/profile-orders-1.avif" type="image/avif">
+                                    <source srcset="img/profile-orders-1.webp" type="image/webp">
+                                    <img loading="lazy" src="img/profile-orders-1.png" class="image" width="50"
+                                      height="50" alt="img">
+                                  </picture>
+                                </div>
+                              </div>
+                              <div class="profile-orders__card-slider-slide swiper-slide">
+                                <div class="profile-orders__card-slider-content">
+                                  <picture>
+                                    <source srcset="img/profile-orders-1.avif" type="image/avif">
+                                    <source srcset="img/profile-orders-1.webp" type="image/webp">
+                                    <img loading="lazy" src="img/profile-orders-1.png" class="image" width="50"
+                                      height="50" alt="img">
+                                  </picture>
+                                </div>
+                              </div>
+                              <div class="profile-orders__card-slider-slide swiper-slide">
+                                <div class="profile-orders__card-slider-content">
+                                  <picture>
+                                    <source srcset="img/profile-orders-1.avif" type="image/avif">
+                                    <source srcset="img/profile-orders-1.webp" type="image/webp">
+                                    <img loading="lazy" src="img/profile-orders-1.png" class="image" width="50"
+                                      height="50" alt="img">
+                                  </picture>
+                                </div>
+                              </div>
+                            </div>
+                            <button class="profile-orders__card-slider-prev btn-reset">
+                              <svg class="icon-20">
+                                <use xlink:href="img/sprite.svg#big-arrow-right"></use>
+                              </svg>
+                            </button>
+                            <button class="profile-orders__card-slider-next btn-reset">
+                              <svg class="icon-20">
+                                <use xlink:href="img/sprite.svg#big-arrow-right"></use>
+                              </svg>
+                            </button>
+                          </div>
+                          <div class="profile-orders__card-btn-outer">
+                            <button class="profile-orders__card-more btn-reset col-btn">
+                              Подробнее
+                            </button>
+                            <a class="profile-orders__card-track uncol-btn" href="#">Отследить</a>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="profile-orders__card">
+                        <div class="profile-orders__card-info">
+                          <div class="profile-orders__card-text">
+                            <span class="profile-orders__card-name">
+                              Номер заказа:
+                            </span>
+                            <span class="profile-orders__card-data">
+                              673290789
+                            </span>
+                          </div>
+                          <div class="profile-orders__card-text">
+                            <span class="profile-orders__card-name">
+                              Дата доставки:
+                            </span>
+                            <span class="profile-orders__card-data">
+                              673290789
+                            </span>
+                          </div>
+                          <div class="profile-orders__card-text">
+                            <span class="profile-orders__card-name">
+                              Статус:
+                            </span>
+                            <span class="profile-orders__card-data">
+                              Ожидание доставки
+                            </span>
+                          </div>
+                          <div class="profile-orders__card-text">
+                            <span class="profile-orders__card-name">
+                              Стоимость заказа:
+                            </span>
+                            <span class="profile-orders__card-data">
+                              124 599 ₴
+                            </span>
+                          </div>
+                        </div>
+                        <div class="profile-orders__card-actions">
+                          <div class="profile-orders__card-slider swiper">
+                            <div class="profile-orders__card-slider-wrapper swiper-wrapper">
+                              <div class="profile-orders__card-slider-slide swiper-slide">
+                                <div class="profile-orders__card-slider-content">
+                                  <picture>
+                                    <source srcset="img/profile-orders-1.avif" type="image/avif">
+                                    <source srcset="img/profile-orders-1.webp" type="image/webp">
+                                    <img loading="lazy" src="img/profile-orders-1.png" class="image" width="50"
+                                      height="50" alt="img">
+                                  </picture>
+                                </div>
+                              </div>
+                            </div>
+                            <button class="profile-orders__card-slider-prev btn-reset">
+                              <svg class="icon-20">
+                                <use xlink:href="img/sprite.svg#big-arrow-right"></use>
+                              </svg>
+                            </button>
+                            <button class="profile-orders__card-slider-next btn-reset">
+                              <svg class="icon-20">
+                                <use xlink:href="img/sprite.svg#big-arrow-right"></use>
+                              </svg>
+                            </button>
+                          </div>
+                          <div class="profile-orders__card-btn-outer">
+                            <button class="profile-orders__card-more btn-reset col-btn">
+                              Подробнее
+                            </button>
+                            <a class="profile-orders__card-track uncol-btn" href="#">Отследить</a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <ul class="profile-orders__pagination list-reset">
+                      <li class="profile-orders__pagination-item">
+                        <a class="profile-orders__pagination-link prev visually-hidden" href="#">
+                          <svg class="icon-10">
+                            <use xlink:href="img/sprite.svg#arrow-right"></use>
+                          </svg>
+                        </a>
+                      </li>
+                      <li class="profile-orders__pagination-item">
+                        <a class="profile-orders__pagination-link" href="#">
+                          1
+                        </a>
+                      </li>
+                      <li class="profile-orders__pagination-item">
+                        <a class="profile-orders__pagination-link" href="#">
+                          2
+                        </a>
+                      </li>
+                      <li class="profile-orders__pagination-item">
+                        <a class="profile-orders__pagination-link" href="#">
+                          3
+                        </a>
+                      </li>
+                      <li class="profile-orders__pagination-item">
+                        <a class="profile-orders__pagination-link" href="#">
+                          4
+                        </a>
+                      </li>
+                      <li class="profile-orders__pagination-item">
+                        <a class="profile-orders__pagination-link" href="#">
+                          5
+                        </a>
+                      </li>
+                      <li class="profile-orders__pagination-item">
+                        <a class="profile-orders__pagination-link" href="#">
+                          ...
+                        </a>
+                      </li>
+                      <li class="profile-orders__pagination-item">
+                        <a class="profile-orders__pagination-link" href="#">
+                          12
+                        </a>
+                      </li>
+                      <li class="profile-orders__pagination-item">
+                        <a class="profile-orders__pagination-link next" href="#">
+                          <svg class="icon-10">
+                            <use xlink:href="img/sprite.svg#arrow-right"></use>
+                          </svg>
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="profile-order">
+                    <div class="profile-order__info profile-orders__card-info">
+                      <div class="profile-orders__card-text">
+                        <span class="profile-orders__card-name">
+                          Номер заказа:
+                        </span>
+                        <span class="profile-orders__card-data">
+                          673290789
+                        </span>
+                      </div>
+                      <div class="profile-orders__card-text">
+                        <span class="profile-orders__card-name">
+                          Дата доставки:
+                        </span>
+                        <span class="profile-orders__card-data">
+                          673290789
+                        </span>
+                      </div>
+                      <div class="profile-orders__card-text">
+                        <span class="profile-orders__card-name">
+                          Статус:
+                        </span>
+                        <span class="profile-orders__card-data">
+                          Ожидание доставки
+                        </span>
+                      </div>
+                      <div class="profile-orders__card-text">
+                        <span class="profile-orders__card-name">
+                          Стоимость заказа:
+                        </span>
+                        <span class="profile-orders__card-data">
+                          124 599 ₴
+                        </span>
+                      </div>
+                    </div>
+                    <ul class="profile-order__good-list list-reset">
+                      <li class="profile-order__good-item">
+                        <div class="profile-order__good-img-outer">
+                          <picture>
+                            <source srcset="img/profile-order.avif" type="image/avif">
+                            <source srcset="img/profile-order.webp" type="image/webp">
+                            <img loading="lazy" src="img/profile-order.png" class="image" width="140" height="140"
+                              alt="img">
+                          </picture>
+                        </div>
+                        <div class="profile-order__good-info">
+                          <div class="profile-order__good-name">
+                            Футболка приветственная название название. Максимум три строки в названии три строки в
+                            названии три строки в названииназванииназванииназвании три строки в названии строки в
+                            названии строки в н
+                          </div>
+                          <div class="profile-order__good-text">
+                            Размер производителя:
+                            <span class="weight">
+                              XS
+                            </span>
+                          </div>
+                          <div class="profile-order__good-text">
+                            Варинаты цветов:
+                            <span class="weight">
+                              Черный
+                            </span>
+                          </div>
+                          <div class="profile-order__good-price">
+                            1 599 ₴
+                          </div>
+                        </div>
+                      </li>
+                      <li class="profile-order__good-item">
+                        <div class="profile-order__good-img-outer">
+                          <picture>
+                            <source srcset="img/profile-order.avif" type="image/avif">
+                            <source srcset="img/profile-order.webp" type="image/webp">
+                            <img loading="lazy" src="img/profile-order.png" class="image" width="140" height="140"
+                              alt="img">
+                          </picture>
+                        </div>
+                        <div class="profile-order__good-info">
+                          <div class="profile-order__good-name">
+                            Футболка приветственная название название. Максимум три строки в названии
+                          </div>
+                          <div class="profile-order__good-text">
+                            Размер производителя:
+                            <span class="weight">
+                              XS
+                            </span>
+                          </div>
+                          <div class="profile-order__good-text">
+                            Варинаты цветов:
+                            <span class="weight">
+                              Черный
+                            </span>
+                          </div>
+                          <div class="profile-order__good-price">
+                            1 599 ₴
+                          </div>
+                        </div>
+                      </li>
+                      <li class="profile-order__good-item">
+                        <div class="profile-order__good-img-outer">
+                          <picture>
+                            <source srcset="img/profile-order.avif" type="image/avif">
+                            <source srcset="img/profile-order.webp" type="image/webp">
+                            <img loading="lazy" src="img/profile-order.png" class="image" width="140" height="140"
+                              alt="img">
+                          </picture>
+                        </div>
+                        <div class="profile-order__good-info">
+                          <div class="profile-order__good-name">
+                            Футболка приветственная название название. Максимум три строки в названии
+                          </div>
+                          <div class="profile-order__good-text">
+                            Размер производителя:
+                            <span class="weight">
+                              XS
+                            </span>
+                          </div>
+                          <div class="profile-order__good-text">
+                            Варинаты цветов:
+                            <span class="weight">
+                              Черный
+                            </span>
+                          </div>
+                          <div class="profile-order__good-price">
+                            1 599 ₴
+                          </div>
+                        </div>
+                      </li>
+                    </ul>
+                    <div class="profile-order__all">
+                      <h3 class="profile-order__all-title hThr">
+                        Весь заказ
+                      </h3>
+                      <ul class="profile-order__all-info list-reset">
+                        <li class="profile-order__all-info-item">
+                          <span class="name">
+                            Стоимость товара
+                          </span>
+                          <span class="price">
+                            3 490 ₴
+                          </span>
+                        </li>
+                        <li class="profile-order__all-info-item">
+                          <span class="name">
+                            Доставка
+                          </span>
+                          <span class="price">
+                            90 ₴
+                          </span>
+                        </li>
+                        <li class="profile-order__all-info-item">
+                          <span class="name">
+                            Общая стоимость
+                          </span>
+                          <span class="weight price">
+                            3 580 ₴
+                          </span>
+                        </li>
+                      </ul>
+                    </div>
+                    <div class="profile-order__list-wrapper">
+                      <nav class="profile-order__list-outer">
+                        <h6 class="profile-order__list-title">
+                          Адресс доставки
+                        </h6>
+                        <ul class="profile-order__list list-reset">
+                          <li class="profile-order__list-item">
+                            <div class="profile-card__text profile-address__card-text">
+                              <span class="name">Ткачук Александр Александрович</span>
+                              <span class="street">ул. Фонтанская дорого 58/2</span>
+                              <span class="city">г.Одесса</span>
+                              <span class="index">45644</span>
+                              <span class="country">Украина</span>
+                              <span class="num">+38(063)8770268</span>
+                            </div>
+                          </li>
+                        </ul>
+                      </nav>
+                      <nav class="profile-order__list-outer">
+                        <h6 class="profile-order__list-title">
+                          Кредитная карта
+                        </h6>
+                        <ul class="profile-order__list list-reset">
+                          <li class="profile-order__list-item">
+                            <div class="profile-orders__card-text">
+                              <span class="profile-orders__card-name">
+                                Номер карты:
+                              </span>
+                              <span class="profile-orders__card-data">
+                                4242 ∙∙∙∙ ∙∙∙∙ 7856 (Mastercard)
+                              </span>
+                            </div>
+                            <div class="profile-orders__card-text">
+                              <span class="profile-orders__card-name">
+                                Expiry Date:
+                              </span>
+                              <span class="profile-orders__card-data">
+                                Feb 2022
+                              </span>
+                            </div>
+                            <div class="profile-orders__card-text">
+                              <span class="profile-orders__card-name">
+                                Name on Card:
+                              </span>
+                              <span class="profile-orders__card-data">
+                                Daniel Robinson
+                              </span>
+                            </div>
+                          </li>
+                        </ul>
+                      </nav>
+                      <nav class="profile-order__list-outer">
+                        <h6 class="profile-order__list-title">
+                          Способ доставки
+                        </h6>
+                        <ul class="profile-order__list list-reset">
+                          <li class="profile-order__list-item">
+                            <div class="profile-orders__card-text">
+                              <span class="profile-orders__card-name">
+                                Почта:
+                              </span>
+                              <span class="profile-orders__card-data">
+                                Новая почта
+                              </span>
+                            </div>
+                            <div class="profile-orders__card-text">
+                              <span class="profile-orders__card-name">
+                                Дата доставки:
+                              </span>
+                              <span class="profile-orders__card-data">
+                                21 мая 2022
+                              </span>
+                            </div>
+                          </li>
+                        </ul>
+                      </nav>
+                    </div>
+                    <button class="profile-order__cancel uncol-btn btn-reset">
+                      Отменить заказ
+                    </button>
+                    <button class="profile-order__close col-btn btn-reset">
+                      Вернуться к остальным
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    @include('partials/footer.html')
+    @include('partials/modals.html')
+  </div>
+</body>
+
+</html>

@@ -1,0 +1,54 @@
+.fnf {
+  &__inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+  }
+
+  &__info {
+    max-width: 567px;
+  }
+
+  &__title {
+    margin-bottom: 30px;
+  }
+
+  &__subtitle {
+    margin-bottom: 22px;
+  }
+
+  &__img-outer {
+
+    &:before {
+      background-image: url('../img/fnf-bg.svg');
+      background-size: cover;
+      width: 902px;
+      height: 100%;
+      left: 50%;
+      top: 50%;
+      transform: translateY(-50%);
+      content: '';
+      position: absolute;
+      z-index: -1;
+    }
+
+    &:after {
+      height: 100%;
+      width: 243px;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%,-50%);
+      background: linear-gradient(90deg, #FFFFFF 0%, rgba(255, 255, 255, 0) 100%);
+      content: '';
+      z-index: -1;
+      position: absolute;
+    }
+    & img {
+      width: 457px;
+      height: 457px;
+      position: relative;
+      z-index: 1;
+    }
+  }
+}

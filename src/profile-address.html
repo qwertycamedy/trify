@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="ru" class="page">
+
+@include('partials/head.html')
+
+<body class="page__body">
+  <div class="site-container">
+    @include('partials/header.html')
+
+    <main class="main">
+      <section class="cat-head faq-head profile-head">
+        <div class="container">
+          <div class="cat-head__inner">
+            <div class="cat-head__info">
+              <div class="breadcrumbs">
+                <ul class="breadcrumbs__list list-reset">
+                  <li class="breadcrumbs__list-item">
+                    <a class="breadcrumbs__list-link" href="index.html">
+                      Главная
+                    </a>
+                  </li>
+                  <li class="breadcrumbs__list-item">
+                    <a class="breadcrumbs__list-link" href="#">
+                      Мой профиль
+                    </a>
+                  </li>
+                </ul>
+              </div>
+              <h1 class="cat-head__title hOne">Мой профиль</h1>
+            </div>
+            <div class="cat-head__img-outer">
+              <picture>
+                <source srcset="img/profile-head.avif" type="image/avif">
+                <source srcset="img/profile-head.webp" type="image/webp">
+                <img loading="lazy" src="img/profile-head.png" class="image" width="654" height="100%" alt="img">
+              </picture>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="profile">
+        <h3 class="visually-hidden">Скрытый заголовок</h3>
+        <div class="container">
+          <div class="profile__inner">
+            <div class="profile__tab">
+              <ul class="profile__tab-btn-list list-reset">
+                <li class="profile__tab-btn-list-item">
+                  <a class="profile__tab-btn btn-reset" href="profile-personal.html">
+                    Персональные данные
+                    <svg class="icon-10">
+                      <use xlink:href="img/sprite.svg#arrow-right"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="profile__tab-btn-list-item">
+                  <a class="profile__tab-btn btn-reset" href="profile-address.html">
+                    Адрес
+                    <svg class="icon-10">
+                      <use xlink:href="img/sprite.svg#arrow-right"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="profile__tab-btn-list-item">
+                  <a class="profile__tab-btn btn-reset" href="profile-orders.html">
+                    Мои заказы
+                    <svg class="icon-10">
+                      <use xlink:href="img/sprite.svg#arrow-right"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="profile__tab-btn-list-item">
+                  <a class="profile__tab-btn btn-reset" href="profile-cards.html">
+                    Сохраненные карты
+                    <svg class="icon-10">
+                      <use xlink:href="img/sprite.svg#arrow-right"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="profile__tab-btn-list-item">
+                  <button class="profile__exit-btn btn-reset">
+                    Выйти
+                    <svg class="icon-10">
+                      <use xlink:href="img/sprite.svg#arrow-right"></use>
+                    </svg>
+                  </button>
+                </li>
+              </ul>
+              <div class="profile__tab-content-outer">
+                <div class="profile__tab-content active" id="profile-2">
+                  <div class="profile-address active">
+                    <h5 class="profile__tab-content-title">
+                      Адрес
+                    </h5>
+                    <div class="profile-card__outer profile-address__card-outer">
+                      <div class="profile-card profile-address__card">
+                        <div class="profile-card__header profile-address__card-header">
+                          <div class="profile-card__title profile-address__card-title">Адресс доставки</div>
+                          <div class="edit-close">
+                            <button class="profile-card__edit profile-address__card-edit btn-reset">
+                              <svg class="icon-20">
+                                <use xlink:href="img/sprite.svg#edit"></use>
+                              </svg>
+                            </button>
+                            <button class="profile-card__close profile-address__card-close btn-reset">
+                              <svg class="icon-20">
+                                <use xlink:href="img/sprite.svg#close"></use>
+                              </svg>
+                            </button>
+                          </div>
+                        </div>
+                        <div class="profile-card__text profile-address__card-text">
+                          <span class="name">Ткачук Александр Александрович</span> <br>
+                          <span class="street">ул. Фонтанская дорого 58/2</span> <br>
+                          <span class="city">г.Одесса</span> <br>
+                          <span class="index">45644</span> <br>
+                          <span class="country">Украина</span> <br>
+                          <span class="num">+38(063)8770268</span>
+                        </div>
+                      </div>
+                      <div class="profile-card profile-address__card">
+                        <div class="profile-card__header profile-address__card-header">
+                          <div class="profile-card__title profile-address__card-title">Адресс доставки</div>
+                          <div class="edit-close">
+                            <button class="profile-card__edit profile-address__card-edit btn-reset">
+                              <svg class="icon-20">
+                                <use xlink:href="img/sprite.svg#edit"></use>
+                              </svg>
+                            </button>
+                            <button class="profile-card__close profile-address__card-close btn-reset">
+                              <svg class="icon-20">
+                                <use xlink:href="img/sprite.svg#close"></use>
+                              </svg>
+                            </button>
+                          </div>
+                        </div>
+                        <div class="profile-card__text profile-address__card-text">
+                          <span class="name">Ткачук Александр Александрович</span> <br>
+                          <span class="street">ул. Фонтанская дорого 58/2</span> <br>
+                          <span class="city">г.Одесса</span> <br>
+                          <span class="index">45644</span> <br>
+                          <span class="country">Украина</span> <br>
+                          <span class="num">+38(063)8770268</span>
+                        </div>
+                      </div>
+                      <div class="profile-card profile-address__card">
+                        <div class="profile-card__header profile-address__card-header">
+                          <div class="profile-card__title profile-address__card-title">Адресс доставки</div>
+                          <div class="edit-close">
+                            <button class="profile-card__edit profile-address__card-edit btn-reset">
+                              <svg class="icon-20">
+                                <use xlink:href="img/sprite.svg#edit"></use>
+                              </svg>
+                            </button>
+                            <button class="profile-card__close profile-address__card-close btn-reset">
+                              <svg class="icon-20">
+                                <use xlink:href="img/sprite.svg#close"></use>
+                              </svg>
+                            </button>
+                          </div>
+                        </div>
+                        <div class="profile-card__text profile-address__card-text">
+                          <span class="name">Ткачук Александр Александрович</span> <br>
+                          <span class="street">ул. Фонтанская дорого 58/2</span> <br>
+                          <span class="city">г.Одесса</span> <br>
+                          <span class="index">45644</span> <br>
+                          <span class="country">Украина</span> <br>
+                          <span class="num">+38(063)8770268</span>
+                        </div>
+                      </div>
+                    </div>
+                    <button class="profile-address__add uncol-btn btn-reset">
+                      Добавить адрес
+                    </button>
+                  </div>
+                  <div class="profile-address-add">
+                    <h5 class="profile__tab-content-title">
+                      Добавить адрес
+                    </h5>
+                    <form class="profile-address__form form" action="#">
+                      <label class="profile-address__input-outer input-outer">
+                        <input class="profile-address__input input input-reset" value="Александр" type="text">
+                        <span>Имя</span>
+                      </label>
+                      <label class="profile-address__input-outer input-outer">
+                        <input class="profile-address__input input input-reset" value="Ткач" type="text">
+                        <span>Фамилия</span>
+                      </label>
+                      <label class="profile-address__input-outer input-outer">
+                        <input class="profile-address__input input input-reset" value="+38 (063) 877 02 68" type="tel">
+                        <span>Номер телефона</span>
+                      </label>
+                      <label class="profile-address__input-outer input-outer">
+                        <input class="profile-address__input input input-reset" value="alexsandr.tkachuk18@gmail.com"
+                          type="text">
+                        <span>E-mail</span>
+                      </label>
+                      <label class="profile-address__input-outer input-outer">
+                        <select class="profile-address__select select profile-address__input" name="profile-data-select"
+                          id="profile-address-select">
+                          <option class="profile-address__option" value="мужской">Казахстан</option>
+                          <option class="profile-address__option" value="мужской">Россия</option>
+                          <option class="profile-address__option" value="мужской">Украина</option>
+                        </select>
+                      </label>
+                      <label class="profile-address__input-outer input-outer">
+                        <input class="profile-address__input input input-reset" type="text" placeholder="Город">
+                      </label>
+                      <label class="profile-address__input-outer input-outer">
+                        <input class="profile-address__input input input-reset" type="text" placeholder="Область">
+                      </label>
+                      <label class="profile-address__input-outer input-outer">
+                        <input class="profile-address__input input input-reset" type="text" placeholder="Адрес">
+                      </label>
+                      <div class="small-input-wrapper">
+                        <label class="profile-address__input-outer input-outer">
+                          <input class="profile-address__input input input-reset" type="text" placeholder="№ Дома">
+                        </label>
+                        <label class="profile-address__input-outer input-outer">
+                          <input class="profile-address__input input input-reset" type="text" placeholder="Подъезд">
+                        </label>
+                        <label class="profile-address__input-outer input-outer">
+                          <input class="profile-address__input input input-reset" type="text" placeholder="Квартира">
+                        </label>
+                      </div>
+                      <label class="profile-address__input-outer input-outer">
+                        <input class="profile-address__input input input-reset" type="text"
+                          placeholder="Почтовый индекс">
+                      </label>
+                    </form>
+                    <button class="profile-address__save uncol-btn btn-reset">
+                      Сохранить
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    @include('partials/footer.html')
+    @include('partials/modals.html')
+  </div>
+</body>
+
+</html>

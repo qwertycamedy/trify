@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="ru" class="page">
+
+@include('partials/head.html')
+
+<body class="page__body">
+  <div class="site-container">
+    @include('partials/header.html')
+
+    <main class="main">
+      <section class="cat-head faq-head profile-head">
+        <div class="container">
+          <div class="cat-head__inner">
+            <div class="cat-head__info">
+              <div class="breadcrumbs">
+                <ul class="breadcrumbs__list list-reset">
+                  <li class="breadcrumbs__list-item">
+                    <a class="breadcrumbs__list-link" href="index.html">
+                      Главная
+                    </a>
+                  </li>
+                  <li class="breadcrumbs__list-item">
+                    <a class="breadcrumbs__list-link" href="#">
+                      Мой профиль
+                    </a>
+                  </li>
+                </ul>
+              </div>
+              <h1 class="cat-head__title hOne">Мой профиль</h1>
+            </div>
+            <div class="cat-head__img-outer">
+              <picture>
+                <source srcset="img/profile-head.avif" type="image/avif">
+                <source srcset="img/profile-head.webp" type="image/webp">
+                <img loading="lazy" src="img/profile-head.png" class="image" width="654" height="100%" alt="img">
+              </picture>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="profile">
+        <h3 class="visually-hidden">Скрытый заголовок</h3>
+        <div class="container">
+          <div class="profile__inner">
+            <div class="profile__tab">
+              <ul class="profile__tab-btn-list list-reset">
+                <li class="profile__tab-btn-list-item">
+                  <a class="profile__tab-btn btn-reset" href="profile-personal.html">
+                    Персональные данные
+                    <svg class="icon-10">
+                      <use xlink:href="img/sprite.svg#arrow-right"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="profile__tab-btn-list-item">
+                  <a class="profile__tab-btn btn-reset" href="profile-address.html">
+                    Адрес
+                    <svg class="icon-10">
+                      <use xlink:href="img/sprite.svg#arrow-right"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="profile__tab-btn-list-item">
+                  <a class="profile__tab-btn btn-reset" href="profile-orders.html">
+                    Мои заказы
+                    <svg class="icon-10">
+                      <use xlink:href="img/sprite.svg#arrow-right"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="profile__tab-btn-list-item">
+                  <a class="profile__tab-btn btn-reset" href="profile-cards.html">
+                    Сохраненные карты
+                    <svg class="icon-10">
+                      <use xlink:href="img/sprite.svg#arrow-right"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="profile__tab-btn-list-item">
+                  <button class="profile__exit-btn btn-reset">
+                    Выйти
+                    <svg class="icon-10">
+                      <use xlink:href="img/sprite.svg#arrow-right"></use>
+                    </svg>
+                  </button>
+                </li>
+              </ul>
+              <div class="profile__tab-content-outer">
+                <div class="profile__tab-content active" id="profile-4">
+                  <div class="profile-cards active">
+                    <h5 class="profile__tab-content-title">
+                      Сохраненные карты
+                    </h5>
+                    <div class="profile-card__outer profile-cards__card-outer">
+                      <div class="profile-card profile-cards__card">
+                        <div class="profile-card__header profile-cards__card-header">
+                          <div class="profile-card__title profile-cards__card-title">Кредитная карта</div>
+                          <div class="edit-close">
+                            <button class="profile-card__edit profile-cards__card-edit btn-reset">
+                              <svg class="icon-20">
+                                <use xlink:href="img/sprite.svg#edit"></use>
+                              </svg>
+                            </button>
+                            <button class="profile-card__close profile-cards__card-close btn-reset">
+                              <svg class="icon-20">
+                                <use xlink:href="img/sprite.svg#close"></use>
+                              </svg>
+                            </button>
+                          </div>
+                        </div>
+                        <div class="profile-card__text profile-cards__card-text">
+                          <span class="weight">
+                            Номер карты:<br>
+                          </span>
+                          4242 ∙∙∙∙ ∙∙∙∙ 7856 (Mastercard)
+                        </div>
+                        <div class="profile-card__text profile-cards__card-text">
+                          <span class="weight">
+                            Expiry Date:<br>
+                          </span>
+                          Feb 2022
+                        </div>
+                        <div class="profile-card__text profile-cards__card-text">
+                          <span class="weight">
+                            Name on Card:<br>
+                          </span>
+                          Daniel Robinson
+                        </div>
+                      </div>
+                    </div>
+                    <button class="profile-cards__add uncol-btn btn-reset">
+                      Добавить карту
+                    </button>
+                  </div>
+                  <div class="profile-cards-add">
+                    <h5 class="profile__tab-content-title">
+                      Добавить карты
+                    </h5>
+                    <form class="profile-cards__form form" action="#">
+                      <label class="profile-cards__input-outer input-outer">
+                        <input class="profile-cards__input input input-reset" type="text" placeholder="Имя">
+                      </label>
+                      <label class="profile-cards__input-outer input-outer">
+                        <input class="profile-cards__input input input-reset" type="text" placeholder="Фамилия">
+                      </label>
+                      <label class="profile-cards__input-outer input-outer">
+                        <input class="profile-cards__input input input-reset" type="text" placeholder="Номер карты">
+                      </label>
+                      <div class="profile-cards__small-input-wrapper small-input-wrapper">
+                        <label class="profile-cards__input-outer input-outer">
+                          <input class="profile-cards__input input input-reset" type="text" placeholder="Срок">
+                        </label>
+                        <label class="profile-cards__input-outer input-outer">
+                          <input class="profile-cards__input input input-reset" type="text" placeholder="CVV">
+                        </label>
+                      </div>
+                    </form>
+                    <button class="profile-cards__save uncol-btn btn-reset">
+                      Сохранить
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    @include('partials/footer.html')
+    @include('partials/modals.html')
+  </div>
+</body>
+
+</html>

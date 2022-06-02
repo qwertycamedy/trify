@@ -1,0 +1,57 @@
+.big-sale {
+  margin-bottom: 60px;
+
+  &__inner {
+    display: flex;
+    justify-content: space-between;
+    gap: 15px;
+  }
+
+  &__big-card {
+    position: relative;
+
+    &-bg {
+      max-width: 556px;
+      width: 100%;
+      height: 724px;
+      & img {
+        height: 724px;
+      }
+    }
+
+    &-info {
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%, -50%);
+      background: rgba(255, 255, 255, 0.9);
+      z-index: 1;
+      backdrop-filter: blur(10px);
+      padding: 120px 40px 130px 60px;
+    }
+
+    &-title {
+      margin-bottom: 35px;
+    }
+
+    &-subtitle {
+      margin-bottom: 53px;
+    }
+
+    &-link {
+      max-width: 168px;
+
+      & svg {
+        width: 34px;
+        height: 14px;
+      }
+    }
+  }
+
+  &__card-outer {
+    justify-content: flex-end;
+    margin-bottom: 0;
+    max-width: 571px;
+    width: 100%;
+  }
+}

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ru" class="page">
+
+@include('partials/head.html')
+
+<body class="page__body">
+  <div class="site-container">
+    @include('partials/header.html')
+
+    <main class="main">
+      @include('partials/favorite-head.html')
+
+      <section class="favorite-empty">
+        <div class="container">
+          <div class="inner">
+            <h1 class="visually-hidden">Скрытый заголовок</h1>
+            <p class="favorite-empty__text">
+              Вы ничего не добавили в “Избраное”. Что бы добавить, нажмите
+
+              <svg class="icon-20">
+                <use xlink:href="img/sprite.svg#heart"></use>
+              </svg>
+            </p>
+            <a class="favorite-empty__link uncol-btn" href="catalog.html">Перейти в каталог</a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    @include('partials/footer.html')
+    @include('partials/modals.html')
+  </div>
+</body>
+
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="ru" class="page">
+
+@include('partials/head.html')
+
+<body class="page__body">
+  <div class="site-container">
+    @include('partials/header.html')
+
+    <main class="main">
+      @include('partials/seller-head.html')
+      @include('partials/seller-tab.html')
+
+      <div class="seller-product">
+        <div class="container">
+          <div class="seller-product__inner">
+            @include('partials/filter.html')
+            <div class="seller-product__result">
+              @include('partials/all-selected.html')
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    @include('partials/footer.html')
+    @include('partials/modals.html')
+  </div>
+</body>
+
+</html>

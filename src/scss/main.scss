@@ -1,0 +1,46 @@
+// базовые подключения
+@import "vars";
+@import "mixins";
+@import "fonts";
+@import "settings";
+
+@import "./components/other-styles";
+@import "./components/keyframes";
+
+// подключения компонентов страницы
+@import "./components/header";
+@import "./components/breadcrumbs";
+@import "./components/hero";
+@import "./components/popular";
+@import "./components/card";
+@import "./components/ad";
+@import "./components/big-sale";
+
+// подключения компонентов других страниц
+@import "./components/fnf";
+
+@import "./components/catalog-head";
+@import "./components/catalog-card";
+
+@import "./components/seller";
+
+@import "./components/product";
+
+@import "./components/favorite";
+
+@import "./components/cart";
+
+@import "./components/ordering";
+
+@import "./components/track";
+
+@import "./components/faq";
+
+@import "./components/profile";
+
+@import "./components/text-page";
+
+// подключения компонентов низа всех страниц и модалки)
+@import "./components/footer";
+@import "./components/modals";
+@import "./components/media";

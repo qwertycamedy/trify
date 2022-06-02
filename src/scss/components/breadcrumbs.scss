@@ -1,0 +1,39 @@
+.breadcrumbs {
+  padding: 30px 0 16px;
+
+  &__list {
+    display: flex;
+    &-item {
+      &:not(:last-child) {
+        margin-right: 5px;
+        & .breadcrumbs__list-link {
+          &:after {
+            content: '-';
+          }
+          &:hover {
+            color: var(--orange);
+          }
+        }
+      }
+      &:last-child {
+        & .breadcrumbs__list-link {
+          pointer-events: none;
+        }
+      }
+    }
+
+    &-link {
+      font-size: 14px;
+      line-height: 17px;
+      position: relative;
+      display: flex;
+      align-items: center;
+      color: rgba(#292D32, .5);
+      transition: all .15s linear;
+
+      &:after {
+        margin-left: 5px;
+      }
+    }
+  }
+}

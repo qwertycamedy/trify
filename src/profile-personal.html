@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="ru" class="page">
+
+@include('partials/head.html')
+
+<body class="page__body">
+  <div class="site-container">
+    @include('partials/header.html')
+
+    <main class="main">
+      <section class="cat-head faq-head profile-head">
+        <div class="container">
+          <div class="cat-head__inner">
+            <div class="cat-head__info">
+              <div class="breadcrumbs">
+                <ul class="breadcrumbs__list list-reset">
+                  <li class="breadcrumbs__list-item">
+                    <a class="breadcrumbs__list-link" href="index.html">
+                      Главная
+                    </a>
+                  </li>
+                  <li class="breadcrumbs__list-item">
+                    <a class="breadcrumbs__list-link" href="#">
+                      Мой профиль
+                    </a>
+                  </li>
+                </ul>
+              </div>
+              <h1 class="cat-head__title hOne">Мой профиль</h1>
+            </div>
+            <div class="cat-head__img-outer">
+              <picture>
+                <source srcset="img/profile-head.avif" type="image/avif">
+                <source srcset="img/profile-head.webp" type="image/webp">
+                <img loading="lazy" src="img/profile-head.png" class="image" width="654" height="100%" alt="img">
+              </picture>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="profile">
+        <h3 class="visually-hidden">Скрытый заголовок</h3>
+        <div class="container">
+          <div class="profile__inner">
+            <div class="profile__tab">
+              <ul class="profile__tab-btn-list list-reset">
+                <li class="profile__tab-btn-list-item">
+                  <a class="profile__tab-btn btn-reset" href="profile-personal.html">
+                    Персональные данные
+                    <svg class="icon-10">
+                      <use xlink:href="img/sprite.svg#arrow-right"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="profile__tab-btn-list-item">
+                  <a class="profile__tab-btn btn-reset" href="profile-address.html">
+                    Адрес
+                    <svg class="icon-10">
+                      <use xlink:href="img/sprite.svg#arrow-right"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="profile__tab-btn-list-item">
+                  <a class="profile__tab-btn btn-reset" href="profile-orders.html">
+                    Мои заказы
+                    <svg class="icon-10">
+                      <use xlink:href="img/sprite.svg#arrow-right"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="profile__tab-btn-list-item">
+                  <a class="profile__tab-btn btn-reset" href="profile-cards.html">
+                    Сохраненные карты
+                    <svg class="icon-10">
+                      <use xlink:href="img/sprite.svg#arrow-right"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="profile__tab-btn-list-item">
+                  <button class="profile__exit-btn btn-reset">
+                    Выйти
+                    <svg class="icon-10">
+                      <use xlink:href="img/sprite.svg#arrow-right"></use>
+                    </svg>
+                  </button>
+                </li>
+              </ul>
+              <div class="profile__tab-content-outer">
+                <div class="profile__tab-content active" id="profile-1">
+                  <div class="profile-data">
+                    <h5 class="profile__tab-content-title">
+                      Персональные данные
+                    </h5>
+                    <div class="profile-data__info">
+                      <div class="profile-data__img-outer">
+                        <picture>
+                          <source srcset="img/profile-img.avif" type="image/avif">
+                          <source srcset="img/profile-img.webp" type="image/webp">
+                          <img loading="lazy" src="img/profile-img.jpg" class="image" width="141" height="151"
+                            alt="img">
+                        </picture>
+                        <span>
+                          Добавить фотографию
+                        </span>
+                      </div>
+                      <form class="profile-data__form form" action="#">
+                        <label class="profile-data__input-outer input-outer">
+                          <input class="profile-data__input input input-reset" type="text">
+                          <span>Имя</span>
+                        </label>
+                        <label class="profile-data__input-outer input-outer">
+                          <input class="profile-data__input input input-reset" type="text">
+                          <span>Фамилия</span>
+                        </label>
+                        <label class="profile-data__input-outer input-outer">
+                          <input class="profile-data__input input input-reset" type="tel">
+                          <span>Номер телефона</span>
+                        </label>
+                        <label class="profile-data__input-outer input-outer">
+                          <input class="profile-data__input input input-reset" type="email">
+                          <span>E-mail</span>
+                        </label>
+                        <label class="profile-data__input-outer input-outer">
+                          <input class="profile-data__input input input-reset" type="text">
+                          <span>Дата рождения</span>
+                        </label>
+                        <label class="profile-data__input-outer input-outer">
+                          <select class="profile-data__select select profile-data__input" name="profile-data-select"
+                            id="profile-data-select">
+                            <option class="profile-data__option" value="женский">Женский</option>
+                            <option class="profile-data__option" value="мужской">Мужской</option>
+                          </select>
+                          <span>Пол</span>
+                        </label>
+                        <label class="profile-data__input-outer input-outer">
+                          <input class="profile-data__input profile-data__password input input-reset" type="password"
+                            placeholder="Старый пароль">
+                        </label>
+                        <label class="profile-data__input-outer input-outer">
+                          <input class="profile-data__input profile-data__password input input-reset" type="password"
+                            placeholder="Новый пароль">
+                        </label>
+                      </form>
+                    </div>
+                    <button class="profile-data__btn col-btn disable btn-reset">
+                      Сохранить
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    @include('partials/footer.html')
+    @include('partials/modals.html')
+  </div>
+</body>
+
+</html>

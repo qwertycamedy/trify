@@ -1,0 +1,472 @@
+<!DOCTYPE html>
+<html lang="ru" class="page">
+
+@include('partials/head.html')
+
+<body class="page__body">
+  <div class="site-container">
+    @include('partials/header.html')
+
+    <main class="main">
+      @include('partials/seller-head.html')
+      @include('partials/seller-tab.html')
+
+      <section class="seller-profile">
+        <div class="container">
+          <div class="seller-profile__inner">
+            <div class="seller-profile__img-outer desc">
+              <picture>
+                <source srcset="img/seller-profile.avif" type="image/avif">
+                <source srcset="img/seller-profile.webp" type="image/webp">
+                <img loading="lazy" src="img/seller-profile.jpg" class="image" width="263" height="263" alt="img">
+              </picture>
+              <div class="seller-profile__rating">
+                <span>Рейтинг</span>
+                <div class="flex">
+                  <div class="seller-profile__star-list">
+                    <div class="seller-profile__star colored card-review-star">
+                      <svg>
+                        <use xlink:href="img/sprite.svg#star"></use>
+                      </svg>
+                    </div>
+                    <div class="seller-profile__star colored card-review-star">
+                      <svg>
+                        <use xlink:href="img/sprite.svg#star"></use>
+                      </svg>
+                    </div>
+                    <div class="seller-profile__star colored card-review-star">
+                      <svg>
+                        <use xlink:href="img/sprite.svg#star"></use>
+                      </svg>
+                    </div>
+                    <div class="seller-profile__star colored card-review-star">
+                      <svg>
+                        <use xlink:href="img/sprite.svg#star"></use>
+                      </svg>
+                    </div>
+                    <div class="seller-profile__star card-review-star">
+                      <svg>
+                        <use xlink:href="img/sprite.svg#star"></use>
+                      </svg>
+                    </div>
+                  </div>
+                  <span class="seller-profile__count">4.1</span>
+                </div>
+              </div>
+            </div>
+            <div class="seller-profile__text-review">
+              <div class="seller-profile__text-block">
+                <h2 class="seller-profile__title hTwo">
+                  О продавце
+                </h2>
+                <p class="seller-profile__text">
+                  Торговая марка "КАКОЙ-ТО.МАГАЗИН" была зарегистрирована в 2001 году.
+                  Общество с ограниченной ответственностью "КАКОЙ-ТО.МАГАЗИН"
+                  Юридический адрес: 105066, Москва г, Доброслободская ул, дом № 5, строение 1
+                  ОГРН: 1077758508002
+                </p>
+              </div>
+
+              <div class="seller-profile__img-outer mob">
+                <picture>
+                  <source srcset="img/seller-profile.avif" type="image/avif">
+                  <source srcset="img/seller-profile.webp" type="image/webp">
+                  <img loading="lazy" src="img/seller-profile.jpg" class="image" width="263" height="263" alt="img">
+                </picture>
+                <div class="seller-profile__rating">
+                  <span>Рейтинг</span>
+                  <div class="flex">
+                    <div class="seller-profile__star-list">
+                      <div class="seller-profile__star colored card-review-star">
+                        <svg>
+                          <use xlink:href="img/sprite.svg#star"></use>
+                        </svg>
+                      </div>
+                      <div class="seller-profile__star colored card-review-star">
+                        <svg>
+                          <use xlink:href="img/sprite.svg#star"></use>
+                        </svg>
+                      </div>
+                      <div class="seller-profile__star colored card-review-star">
+                        <svg>
+                          <use xlink:href="img/sprite.svg#star"></use>
+                        </svg>
+                      </div>
+                      <div class="seller-profile__star colored card-review-star">
+                        <svg>
+                          <use xlink:href="img/sprite.svg#star"></use>
+                        </svg>
+                      </div>
+                      <div class="seller-profile__star card-review-star">
+                        <svg>
+                          <use xlink:href="img/sprite.svg#star"></use>
+                        </svg>
+                      </div>
+                    </div>
+                    <span class="seller-profile__count">4.1</span>
+                  </div>
+                </div>
+              </div>
+              <div class="seller-profile__text-block">
+                <h2 class="seller-profile__title hTwo">
+                  Гарантии
+                </h2>
+                <p class="seller-profile__text">
+                  Торговая марка "КАКОЙ-ТО.МАГАЗИН" была зарегистрирована в 2001 году.
+                  Общество с ограниченной ответственностью "КАКОЙ-ТО.МАГАЗИН"
+                  Юридический адрес: 105066, Москва г, Доброслободская ул, дом № 5, строение 1
+                  ОГРН: 1077758508002
+                </p>
+              </div>
+              <div class="seller-profile__review-wrapper">
+                <h3 class="seller-profile__title review-title hTwo">
+                  Отзывы
+                </h3>
+                <div class="seller-profile__review-outer">
+                  <div class="seller-profile__review">
+                    <div class="seller-profile__review-head">
+                      <div class="flex">
+                        <div class="seller-profile__review-img-outer">
+                          <picture>
+                            <source srcset="img/seller-user-review.avif" type="image/avif">
+                            <source srcset="img/seller-user-review.webp" type="image/webp">
+                            <img loading="lazy" src="img/seller-user-review.jpg" class="image" width="40" height="40"
+                              alt="img">
+                          </picture>
+                        </div>
+                        <div class="seller-profile__review-name-date">
+                          <div class="seller-profile__review-name">
+                            Александр
+                          </div>
+                          <div class="seller-profile__review-date">
+                            09 февраля 2021
+                          </div>
+                        </div>
+                      </div>
+                      <div class="seller-profile__star-list">
+                        <div class="seller-profile__star colored card-review-star">
+                          <svg>
+                            <use xlink:href="img/sprite.svg#star"></use>
+                          </svg>
+                        </div>
+                        <div class="seller-profile__star colored card-review-star">
+                          <svg>
+                            <use xlink:href="img/sprite.svg#star"></use>
+                          </svg>
+                        </div>
+                        <div class="seller-profile__star colored card-review-star">
+                          <svg>
+                            <use xlink:href="img/sprite.svg#star"></use>
+                          </svg>
+                        </div>
+                        <div class="seller-profile__star colored card-review-star">
+                          <svg>
+                            <use xlink:href="img/sprite.svg#star"></use>
+                          </svg>
+                        </div>
+                        <div class="seller-profile__star card-review-star">
+                          <svg>
+                            <use xlink:href="img/sprite.svg#star"></use>
+                          </svg>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="seller-profile__review-text">
+                      Всем привет! Подскажите, пожалуйста, если я захочу переустановить систему на другое устройство в
+                      будущем, могу ли я этим ключом активировать ее снова на абсолютно новом железе с нуля? Просто
+                      сколько сам не читал информацию в интернете точного ответа так и не получил. Буду признателен за
+                      ответ
+                    </div>
+                    <div class="seller-profile__review-marks">
+                      <div class="seller-profile__review-like">
+                        <svg class="icon-20">
+                          <use xlink:href="img/sprite.svg#like"></use>
+                        </svg>
+                        <span class="count">1</span>
+                      </div>
+                      <div class="seller-profile__review-dislike">
+                        <svg class="icon-20">
+                          <use xlink:href="img/sprite.svg#dislike"></use>
+                        </svg>
+                        <span class="count">0</span>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="seller-profile__review">
+                    <div class="seller-profile__review-head">
+                      <div class="flex">
+                        <div class="seller-profile__review-img-outer">
+                          <picture>
+                            <source srcset="img/seller-user-review.avif" type="image/avif">
+                            <source srcset="img/seller-user-review.webp" type="image/webp">
+                            <img loading="lazy" src="img/seller-user-review.jpg" class="image" width="40" height="40"
+                              alt="img">
+                          </picture>
+                        </div>
+                        <div class="seller-profile__review-name-date">
+                          <div class="seller-profile__review-name">
+                            Александр
+                          </div>
+                          <div class="seller-profile__review-date">
+                            09 февраля 2021
+                          </div>
+                        </div>
+                      </div>
+                      <div class="seller-profile__star-list">
+                        <div class="seller-profile__star colored card-review-star">
+                          <svg>
+                            <use xlink:href="img/sprite.svg#star"></use>
+                          </svg>
+                        </div>
+                        <div class="seller-profile__star colored card-review-star">
+                          <svg>
+                            <use xlink:href="img/sprite.svg#star"></use>
+                          </svg>
+                        </div>
+                        <div class="seller-profile__star colored card-review-star">
+                          <svg>
+                            <use xlink:href="img/sprite.svg#star"></use>
+                          </svg>
+                        </div>
+                        <div class="seller-profile__star colored card-review-star">
+                          <svg>
+                            <use xlink:href="img/sprite.svg#star"></use>
+                          </svg>
+                        </div>
+                        <div class="seller-profile__star card-review-star">
+                          <svg>
+                            <use xlink:href="img/sprite.svg#star"></use>
+                          </svg>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="seller-profile__review-text">
+                      Всем привет! Подскажите, пожалуйста, если я захочу переустановить систему на другое устройство в
+                      будущем, могу ли я этим ключом активировать ее снова на абсолютно новом железе с нуля? Просто
+                      сколько сам не читал информацию в интернете точного ответа так и не получил. Буду признателен за
+                      ответ
+                    </div>
+                    <div class="seller-profile__review-marks">
+                      <div class="seller-profile__review-like">
+                        <svg class="icon-20">
+                          <use xlink:href="img/sprite.svg#like"></use>
+                        </svg>
+                        <span class="count">1</span>
+                      </div>
+                      <div class="seller-profile__review-dislike">
+                        <svg class="icon-20">
+                          <use xlink:href="img/sprite.svg#dislike"></use>
+                        </svg>
+                        <span class="count">0</span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="seller-profile__review">
+                    <div class="seller-profile__review-head">
+                      <div class="flex">
+                        <div class="seller-profile__review-img-outer">
+                          <picture>
+                            <source srcset="img/seller-user-review.avif" type="image/avif">
+                            <source srcset="img/seller-user-review.webp" type="image/webp">
+                            <img loading="lazy" src="img/seller-user-review.jpg" class="image" width="40" height="40"
+                              alt="img">
+                          </picture>
+                        </div>
+                        <div class="seller-profile__review-name-date">
+                          <div class="seller-profile__review-name">
+                            Александр
+                          </div>
+                          <div class="seller-profile__review-date">
+                            09 февраля 2021
+                          </div>
+                        </div>
+                      </div>
+                      <div class="seller-profile__star-list">
+                        <div class="seller-profile__star colored card-review-star">
+                          <svg>
+                            <use xlink:href="img/sprite.svg#star"></use>
+                          </svg>
+                        </div>
+                        <div class="seller-profile__star colored card-review-star">
+                          <svg>
+                            <use xlink:href="img/sprite.svg#star"></use>
+                          </svg>
+                        </div>
+                        <div class="seller-profile__star colored card-review-star">
+                          <svg>
+                            <use xlink:href="img/sprite.svg#star"></use>
+                          </svg>
+                        </div>
+                        <div class="seller-profile__star colored card-review-star">
+                          <svg>
+                            <use xlink:href="img/sprite.svg#star"></use>
+                          </svg>
+                        </div>
+                        <div class="seller-profile__star card-review-star">
+                          <svg>
+                            <use xlink:href="img/sprite.svg#star"></use>
+                          </svg>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="seller-profile__review-text">
+                      Всем привет! Подскажите, пожалуйста, если я захочу переустановить систему на другое устройство в
+                      будущем, могу ли я этим ключом активировать ее снова на абсолютно новом железе с нуля? Просто
+                      сколько сам не читал информацию в интернете точного ответа так и не получил. Буду признателен за
+                      ответ
+                    </div>
+                    <div class="seller-profile__review-marks">
+                      <div class="seller-profile__review-like">
+                        <svg class="icon-20">
+                          <use xlink:href="img/sprite.svg#like"></use>
+                        </svg>
+                        <span class="count">1</span>
+                      </div>
+                      <div class="seller-profile__review-dislike">
+                        <svg class="icon-20">
+                          <use xlink:href="img/sprite.svg#dislike"></use>
+                        </svg>
+                        <span class="count">0</span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="seller-profile__review">
+                    <div class="seller-profile__review-head">
+                      <div class="flex">
+                        <div class="seller-profile__review-img-outer">
+                          <picture>
+                            <source srcset="img/seller-user-review.avif" type="image/avif">
+                            <source srcset="img/seller-user-review.webp" type="image/webp">
+                            <img loading="lazy" src="img/seller-user-review.jpg" class="image" width="40" height="40"
+                              alt="img">
+                          </picture>
+                        </div>
+                        <div class="seller-profile__review-name-date">
+                          <div class="seller-profile__review-name">
+                            Александр
+                          </div>
+                          <div class="seller-profile__review-date">
+                            09 февраля 2021
+                          </div>
+                        </div>
+                      </div>
+                      <div class="seller-profile__star-list">
+                        <div class="seller-profile__star colored card-review-star">
+                          <svg>
+                            <use xlink:href="img/sprite.svg#star"></use>
+                          </svg>
+                        </div>
+                        <div class="seller-profile__star colored card-review-star">
+                          <svg>
+                            <use xlink:href="img/sprite.svg#star"></use>
+                          </svg>
+                        </div>
+                        <div class="seller-profile__star colored card-review-star">
+                          <svg>
+                            <use xlink:href="img/sprite.svg#star"></use>
+                          </svg>
+                        </div>
+                        <div class="seller-profile__star colored card-review-star">
+                          <svg>
+                            <use xlink:href="img/sprite.svg#star"></use>
+                          </svg>
+                        </div>
+                        <div class="seller-profile__star card-review-star">
+                          <svg>
+                            <use xlink:href="img/sprite.svg#star"></use>
+                          </svg>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="seller-profile__review-text">
+                      Всем привет! Подскажите, пожалуйста, если я захочу переустановить систему на другое устройство в
+                      будущем, могу ли я этим ключом активировать ее снова на абсолютно новом железе с нуля? Просто
+                      сколько сам не читал информацию в интернете точного ответа так и не получил. Буду признателен за
+                      ответ
+                    </div>
+                    <div class="seller-profile__review-marks">
+                      <div class="seller-profile__review-like">
+                        <svg class="icon-20">
+                          <use xlink:href="img/sprite.svg#like"></use>
+                        </svg>
+                        <span class="count">1</span>
+                      </div>
+                      <div class="seller-profile__review-dislike">
+                        <svg class="icon-20">
+                          <use xlink:href="img/sprite.svg#dislike"></use>
+                        </svg>
+                        <span class="count">0</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="seller-profile__review-pagination-more">
+                  <ul class="seller-profile__review-pagination profile-orders__pagination list-reset">
+                    <li class="profile-orders__pagination-item">
+                      <a class="profile-orders__pagination-link prev visually-hidden" href="#">
+                        <svg class="icon-10">
+                          <use xlink:href="img/sprite.svg#arrow-right"></use>
+                        </svg>
+                      </a>
+                    </li>
+                    <li class="profile-orders__pagination-item">
+                      <a class="profile-orders__pagination-link" href="#">
+                        1
+                      </a>
+                    </li>
+                    <li class="profile-orders__pagination-item">
+                      <a class="profile-orders__pagination-link" href="#">
+                        2
+                      </a>
+                    </li>
+                    <li class="profile-orders__pagination-item">
+                      <a class="profile-orders__pagination-link" href="#">
+                        3
+                      </a>
+                    </li>
+                    <li class="profile-orders__pagination-item">
+                      <a class="profile-orders__pagination-link" href="#">
+                        4
+                      </a>
+                    </li>
+                    <li class="profile-orders__pagination-item">
+                      <a class="profile-orders__pagination-link" href="#">
+                        5
+                      </a>
+                    </li>
+                    <li class="profile-orders__pagination-item">
+                      <a class="profile-orders__pagination-link" href="#">
+                        ...
+                      </a>
+                    </li>
+                    <li class="profile-orders__pagination-item">
+                      <a class="profile-orders__pagination-link" href="#">
+                        12
+                      </a>
+                    </li>
+                    <li class="profile-orders__pagination-item">
+                      <a class="profile-orders__pagination-link next" href="#">
+                        <svg class="icon-10">
+                          <use xlink:href="img/sprite.svg#arrow-right"></use>
+                        </svg>
+                      </a>
+                    </li>
+                  </ul>
+                  <button class="seller-profile__review-more btn-reset uncol-btn">
+                    Показать еще
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    @include('partials/footer.html')
+    @include('partials/modals.html')
+  </div>
+</body>
+
+</html>

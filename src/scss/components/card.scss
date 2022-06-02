@@ -1,0 +1,147 @@
+.card {
+  &-section {
+    position: relative;
+
+    &:before {
+      z-index: -1;
+      background: var(--light-g);
+      content: '';
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%, -50%);
+      height: calc(100% + 300px);
+      width: 100%;
+    }
+  }
+
+  &-outer {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-bottom: 60px;
+  }
+
+  position: relative;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  flex: 1;
+  border: 1px solid var(--grey);
+  padding: 35px 27px 30px;
+  width: 284px;
+  color: var(--dark);
+
+  transition: all .15s linear;
+
+
+  &:hover {
+    box-shadow: 0px 4px 34px rgba(0, 0, 0, 0.1);
+  }
+
+  &-sale {
+    position: absolute;
+    left: 10px;
+    top: 10px;
+    background: var(--orange);
+    padding: 5px 8px 6px;
+    border-radius: 3px;
+    font-weight: 600;
+    color: var(--light);
+  }
+
+  &-favorite {
+    position: absolute;
+    right: 18px;
+    top: 10px;
+    width: 24px;
+    height: 24px;
+
+    transition: all .3s linear;
+    & svg {
+      transition: all .3s linear;
+      stroke: var(--dark);
+      fill: transparent;
+    }
+
+    &.active,
+    &:hover {
+      & svg {
+        stroke: #FF3838;
+        fill: #FF3838;
+      }
+    }
+  }
+
+  &-img-outer {
+    width: 202px;
+    height: 166px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 19px;
+
+    & img {
+      object-fit: contain;
+    }
+  }
+
+  &-review {
+    font-size: 12px;
+    line-height: 15px;
+
+    &-outer {
+      display: flex;
+      align-items: center;
+      margin-bottom: 16px;
+    }
+
+    &-star {
+      &-list {
+        display: flex;
+        margin-right: 14px;
+      }
+
+      width: 14px;
+      height: 14px;
+      color: var(--grey);
+      flex: 0;
+      &:not(:last-child) {
+        margin-right: 7px;
+      }
+
+      &.colored {
+        color: var(--orange);
+      }
+
+      & svg {
+        fill: currentColor;
+        stroke: none;
+      }
+    }
+  }
+
+  &-name {
+    font-weight: 600;
+    margin-bottom: 14px;
+  }
+
+  &-price {
+    display: flex;
+    align-items: center;
+
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 25px;
+    color: var(--orange);
+
+    & .old {
+      font-weight: 400;
+      margin-left: 15px;
+      font-size: 14px;
+      line-height: 17px;
+      color: var(--dark-g);
+      text-decoration: line-through;
+    }
+  }
+}

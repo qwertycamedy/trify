@@ -1,0 +1,42 @@
+.favorite {
+  &-head {
+    margin-bottom: 0;
+  }
+
+  &-card {
+    margin-top: -40px;
+    & .card {
+      background: var(--light);
+
+      &-section__inner {
+        margin-bottom: 20px;
+      }
+    }
+  }
+
+  &-empty {
+    text-align: center;
+    padding: 133px 0;
+    &__inner {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+
+    &__text {
+      max-width: 381px;
+      margin: 0 auto 20px;
+
+      & .icon-20 {
+        width: 14px;
+        height: 14px;
+        transform: translateY(2px);
+      }
+    }
+
+    &__link {
+      margin: 0 auto;
+    }
+  }
+}

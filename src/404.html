@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="ru" class="page">
+
+@include('partials/head.html')
+
+<body class="page__body">
+  <div class="site-container">
+    @include('partials/header.html')
+
+    <main class="main">
+      <section class="fnf">
+        <div class="container">
+          <div class="fnf__inner">
+            <div class="fnf__info">
+              <h1 class="fnf__title hOne">
+                Упс...<br>
+                Страница не найдена!
+              </h1>
+              <p class="fnf__subtitle">
+                Что-то пошло не так, но мы это быстро исправим!
+              </p>
+              <a class="fnf__link col-btn" href="index.html">Вернуться на главную</a>
+            </div>
+            <div class="fnf__img-outer">
+              <img src="img/fnf-img.svg" alt="img" width="376" height="376">
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    @include('partials/footer.html')
+    @include('partials/modals.html')
+  </div>
+</body>
+
+</html>
