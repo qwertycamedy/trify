@@ -131,6 +131,8 @@
           &:after {
             margin-left: 14px;
             content: '4.2';
+            font-size: 12px;
+            line-height: 15px;
           }
 
           &:before {
@@ -140,6 +142,7 @@
             height: 13px;
             background: var(--grey);
             margin-left: 16px;
+            margin-top: 3.5px;
           }
         }
 
@@ -198,7 +201,6 @@
       &-outer {
         display: flex;
         align-items: center;
-
       }
 
       border: 1px solid var(--grey);
@@ -211,7 +213,8 @@
       height: 32px;
 
       &.size-btn {
-        padding: 8px 12px;
+        width: 40px;
+        justify-content: center;
         text-transform: uppercase;
 
         & .name {
@@ -303,10 +306,10 @@
     & .cart-order {
       &__count {
         &-outer {
+          width: 160px;
           margin-right: 16px;
-        }
-        &-btn {
-          width: 55px;
+          justify-content: space-between;
+          height: 40px;
         }
       }
     }
@@ -408,6 +411,11 @@
     margin-bottom: 20px;
   }
 
+  &__text {
+    font-size: 14px;
+    line-height: 17px;
+  }
+
   &__btn {
     &-list {
       display: flex;
@@ -420,11 +428,13 @@
 
     &-item {
       &:not(:last-child) {
-        margin-right: 30px;
+        margin-right: 38px;
       }
     }
 
     font-weight: 600;
+    font-size: 14px;
+    line-height: 17px;
     padding: 17px 0;
     border-bottom: 1px solid transparent;
     transition: all .15s linear;

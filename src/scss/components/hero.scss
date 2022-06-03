@@ -47,6 +47,12 @@
     &-link {
       max-width: 168px;
       width: 100%;
+
+      & svg {
+        width: 33px;
+        height: 14px;
+        object-fit: contain;
+      }
     }
 
     &-navigation {

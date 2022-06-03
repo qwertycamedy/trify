@@ -1,5 +1,5 @@
 .ordering {
-  margin-top: -54px;
+  margin-top: -40px;
   margin-bottom: 60px;
 
   &__inner {
@@ -20,7 +20,7 @@
   }
 
   &-s {
-    margin-top: -54px;
+    margin-top: -40px;
     text-align: center;
     &__inner {
       border: 1px solid var(--grey);
@@ -97,6 +97,8 @@
     }
 
     &-title {
+      font-size: 14px;
+      line-height: 17px;
       margin-bottom: 14px;
     }
 
@@ -110,7 +112,8 @@
     }
 
     & .thin {
-      margin-bottom: 7px;
+      margin-bottom: 6px;
+      display: flex;
       font-size: 14px;
       line-height: 17px;
     }
@@ -119,6 +122,10 @@
       font-weight: 600;
       font-size: 14px;
       line-height: 17px;
+    }
+
+    & .image {
+      margin-right: 35px;
     }
   }
 
@@ -131,6 +138,11 @@
       align-items: center;
       justify-content: space-between;
       margin-bottom: 17px;
+
+      &-title {
+        font-size: 16px;
+        line-height: 20px;
+      }
 
       &-info {
         display: flex;

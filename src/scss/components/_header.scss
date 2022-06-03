@@ -75,7 +75,7 @@
 
     &-item {
       &:not(:last-child) {
-        margin-right: 35px;
+        margin-right: 26px;
       }
     }
 
@@ -591,6 +591,7 @@
       overflow: hidden;
       display: -webkit-box;
       -webkit-line-clamp: 2;
+      height: 30px;
       -webkit-box-orient: vertical;
     }
 

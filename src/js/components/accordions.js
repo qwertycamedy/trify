@@ -75,17 +75,7 @@ if (document.querySelector('.filter')) {
 
 function categoriesAccordions(accordions) {
   accordions.forEach((function (t) {
-    t.addEventListener("mouseover", (function (t) {
-      var c = t.currentTarget,
-        e = document.querySelectorAll(".categories__sublist"),
-        l = c.querySelector(".categories__sublist");
-      accordions.forEach((function (t) {
-        t != c && t.classList.remove("active")
-      })), e.forEach((function (t) {
-        t.style.maxHeight = null
-      })), c.classList.toggle("active"), c.classList.contains("active") ? l.style.maxHeight = l.scrollHeight + "px" : l.style.maxHeight = null
-    }))
-    t.addEventListener("mouseout", (function (t) {
+    t.addEventListener("click", (function (t) {
       var c = t.currentTarget,
         e = document.querySelectorAll(".categories__sublist"),
         l = c.querySelector(".categories__sublist");

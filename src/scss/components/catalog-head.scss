@@ -36,5 +36,10 @@
     }
   }
 
-
+  &__reviews {
+    &-count {
+      font-size: 12px;
+      line-height: 15px;
+    }
+  }
 }

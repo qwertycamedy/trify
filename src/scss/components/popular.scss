@@ -9,11 +9,14 @@
   }
 
   &__slider {
+    border-top: 1px solid var(--grey);
+    border-left: 1px solid var(--grey);
     &-slide {
+      border-right: 1px solid var(--grey);
+      border-bottom: 1px solid var(--grey);
       height: 360px;
       box-sizing: border-box;
       width: 284px !important;
-      border: 1px solid var(--grey);
     }
 
     &-content {
@@ -22,9 +25,11 @@
   }
 
   &__card {
+    &-outer {
+      border: unset !important;
+    }
     box-sizing: border-box;
-    height: 360px;
     border: unset !important;
-
+    height: 360px;
   }
 }
