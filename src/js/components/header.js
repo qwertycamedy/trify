@@ -57,20 +57,6 @@ function langAcc(mainBtn, btns, span) {
   });
 }
 
-function cartShow(cartOuter, close, cartCard) {
-  cartOuter.addEventListener('mouseover', function () {
-    cartCard.classList.add('active');
-  });
-
-  cartOuter.addEventListener('mouseout', function () {
-    cartCard.classList.remove('active');
-  });
-
-  close.addEventListener('click', function () {
-    cartCard.classList.remove('active');
-  });
-}
-
 function headerLinkAddActive(headerLink) {
   headerLink.forEach(link => {
     if(link.href == document.URL) {
@@ -82,5 +68,4 @@ function headerLinkAddActive(headerLink) {
 headerSearch(_vars.headerSearchInput, _vars.headerSearchOuter, _vars.headerSearchList, _vars.headerSearchClose);
 langAcc(_vars.langBtn, _vars.langListBtns, _vars.langSpanBtn);
 currencyAcc(_vars.curBtn, _vars.curListBtns, _vars.curSpanBtn);
-cartShow(_vars.cartOuter, _vars.cartClose, _vars.cartCard);
 headerLinkAddActive(_vars.headerLink);

@@ -12,6 +12,11 @@ export default {
   //catalog-modal
   catalogModals: document?.querySelectorAll('.catalog__modal'),
   catalogBtns: document?.querySelectorAll('.header__catalog-head-btn'),
+  headerCatalogModals: document?.querySelectorAll('.catalog-modal'),
+
+  cartBtn: document?.querySelector('.cart-btn'),
+  cartModal: document?.querySelector('.header__cart-list-outer'),
+
   //header els
   headerSearchInput: document?.querySelector('.header__search'),
   headerSearchOuter: document?.querySelector('.header__search-form'),

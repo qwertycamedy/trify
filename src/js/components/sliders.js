@@ -57,7 +57,7 @@ if (document.querySelector('.hero__small-slider')) {
     },
     breakpoints: {
       320: {
-        slidesPerView: 3,
+        slidesPerView: 'auto',
         spaceBetween: 9,
       },
       550: {
@@ -65,6 +65,7 @@ if (document.querySelector('.hero__small-slider')) {
       },
       769: {
         slidesPerView: 4,
+        spaceBetween: 14,
       }
     }
   });

@@ -11,6 +11,7 @@
   &__slider {
     border-top: 1px solid var(--grey);
     border-left: 1px solid var(--grey);
+    width: max-content;
     &-slide {
       border-right: 1px solid var(--grey);
       border-bottom: 1px solid var(--grey);

@@ -163,17 +163,10 @@
   width: 100%;
   padding: 33px 0 66px;
 
-  opacity: 0;
-  visibility: hidden;
-  pointer-events: none;
+  display: none;
 
   transition: all .15s linear;
 
-  &.active {
-    opacity: 1;
-    visibility: visible;
-    pointer-events: all;
-  }
 
   &__list {
     display: flex;
@@ -212,9 +205,12 @@
       &-outer {
         display: flex;
         justify-content: space-between;
+        margin-bottom: 40px;
+        height: max-content;
+        min-height: 361px;
 
-        &:not(:last-child) {
-          margin-bottom: 40px;
+        &:last-child {
+          margin-bottom: 0;
         }
       }
     }

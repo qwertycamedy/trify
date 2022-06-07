@@ -3,13 +3,14 @@
     border: 1px solid var(--grey);
     display: flex;
     justify-content: space-between;
+    min-width: 0;
   }
 
   &__slider {
     &-outer {
       display: flex;
       position: relative;
-      width: 561px;
+      min-width: 561px;
       padding: 10px 8px;
     }
 
@@ -123,8 +124,12 @@
 
         & svg {
           margin-right: 12px;
-          width: 16px;
-          height: 16px;
+          width: 13.5px;
+          height: 13.5px;
+        }
+
+        &-star {
+          margin-top: 0;
         }
 
         &-star-list {
@@ -133,13 +138,14 @@
             content: '4.2';
             font-size: 12px;
             line-height: 15px;
+            transform: translateY(2px);
           }
 
           &:before {
             order: 1;
             content: '';
-            width: 1px;
-            height: 13px;
+            width: .5px;
+            height: 14px;
             background: var(--grey);
             margin-left: 16px;
             margin-top: 3.5px;
@@ -378,6 +384,14 @@
       &-actions {
         display: flex;
         align-items: center;
+
+        & .card-review {
+          &-star-list {
+            margin-right: 5px;
+          }
+
+          transform: unset;
+        }
       }
 
       & .card-review {
@@ -457,6 +471,11 @@
       display: block;
       animation: show .700s linear;
     }
+
+    &#product-tab-content-3 {
+      padding: unset;
+
+    }
   }
 
   &__list {
@@ -504,7 +523,8 @@
   }
 
   &__statistic {
-    margin-right: 10px;
+    padding: 26px 30px 15px 15px;
+    border-right: 1px solid var(--grey);
     &-list {
       margin-bottom: 17px;
     }
@@ -574,7 +594,7 @@
   }
 
   &__review {
-    max-width: 817px;
+    width: 100%;
 
     &-btn {
       font-weight: 600;
@@ -594,8 +614,8 @@
       }
 
       &-outer {
-        padding-top: 5px;
-        margin-bottom: 32px;
+        padding: 26px 15px 0 30px;
+        margin-bottom: 15px;
       }
     }
 
@@ -609,6 +629,10 @@
 
       & .seller-profile__review:first-child {
         border-top: unset;
+      }
+
+      & .seller-profile__review {
+        padding: 17px 30px;
       }
     }
   }

@@ -169,9 +169,11 @@
   &__count {
     font-size: 14px;
     line-height: 17px;
+    font-weight: 400;
   }
 
   &__star {
+    margin-top: 0;
     &-list {
       display: flex;
     }

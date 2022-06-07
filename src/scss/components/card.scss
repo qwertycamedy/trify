@@ -92,6 +92,7 @@
   &-review {
     font-size: 12px;
     line-height: 15px;
+    transform: translateY(3px);
 
     &-outer {
       display: flex;
@@ -105,8 +106,8 @@
         margin-right: 14px;
       }
 
-      width: 14px;
-      height: 14px;
+      width: 12px;
+      height: 12px;
       color: var(--grey);
       flex: 0;
       &:not(:last-child) {
@@ -120,6 +121,8 @@
       & svg {
         fill: currentColor;
         stroke: none;
+        width: 12px;
+        height: 12px;
       }
     }
   }

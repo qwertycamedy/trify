@@ -7,3 +7,16 @@
     opacity: 1;
   }
 }
+
+
+@keyframes showCatalog {
+  from {
+    transform: translateY(-10px);
+    opacity: .7;
+  }
+
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}

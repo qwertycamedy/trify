@@ -37,9 +37,11 @@
   }
 
   &__reviews {
+    transform: translateY(-4px);
     &-count {
       font-size: 12px;
       line-height: 15px;
+      transform: translateY(4px);
     }
   }
 }
