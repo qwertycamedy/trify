@@ -45,6 +45,10 @@ export default {
   headerCatalog: document?.querySelectorAll('.header__catalog-head-item'),
 
   //tabs
+  signModalTabBtns: document?.querySelectorAll('.sign-modal__tab-btn'),
+  signModalTabContents: document?.querySelectorAll('.sign-modal__tab-content'),
+
+
   profileTabBtns: document?.querySelectorAll('.profile__tab-btn'),
   profileMainBtn: document?.querySelector('.profile-btn'),
 
@@ -116,6 +120,8 @@ export default {
   signModal: document?.querySelector('.sign-modal'),
   signModalOpen: document?.querySelector('.header__log'),
   signNext: document?.querySelector('.sign-modal__btn'),
+  signReg: document?.querySelector('.reg-btn'),
+  signCode: document?.querySelector('.sign-modal__forgot'),
 
   sfModalClose: document?.querySelector('.sf-reg__close'),
   sfModal: document?.querySelector('.sf-reg'),

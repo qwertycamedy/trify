@@ -111,3 +111,30 @@ if (document.querySelector('.product-tab__review')) {
 
   document.querySelector('.product-tab__review-btn').click();
 }
+
+if (document.querySelector('.sign-modal')) {
+  _vars.signModalTabBtns.forEach(signModalTabClick);
+
+  function signModalTabClick(item) {
+    item.addEventListener("click", function () {
+      let currentBtn = item;
+      let tabId = currentBtn.getAttribute("data-sign");
+      let currentTab = document.querySelector(tabId);
+
+      if (!currentBtn.classList.contains('active')) {
+        _vars.signModalTabBtns.forEach(function (item) {
+          item.classList.remove('active');
+        });
+
+        _vars.signModalTabContents.forEach(function (item) {
+          item.classList.remove('active');
+        });
+
+        currentBtn.classList.add('active');
+        currentTab.classList.add('active');
+      }
+    });
+  }
+
+  document.querySelector('.sign-modal__tab-btn').click();
+}

@@ -123,28 +123,6 @@ if (document.querySelector('.restore-pass__enter-code')) {
   restoreEnterCodeModalOpen(_vars.restoreEnterCodeModal, _vars.restoreEnterCodeModalClose, _vars.restoreEnterCodeModalNext,
     _vars.newPassModal);
 }
-if (document.querySelector('.sign-modal__enter-code')) {
-  function signEnterCodeModalOpen(modal, closeBtn, openNext, sucModal) {
-    closeBtn.addEventListener('click', function () {
-      modal.classList.remove('active');
-    });
-
-    openNext.addEventListener('click', function () {
-      modal.classList.remove('active');
-      sucModal.classList.add('active');
-    });
-
-    modal.addEventListener('click', function (e) {
-      let targ = e.target;
-
-      if (targ == this) {
-        modal.classList.remove('active');
-      }
-    });
-  }
-
-  signEnterCodeModalOpen(_vars.signEnterCodeModal, _vars.signEnterCodeModalClose, _vars.signEnterCodeModalNext, _vars.sfModal);
-}
 
 if (document.querySelector('.new-pass')) {
   function newPassModalOpen(modal, closeBtn) {
@@ -165,17 +143,12 @@ if (document.querySelector('.new-pass')) {
 }
 
 if (document.querySelector('.sign-modal')) {
-  function newPassModalOpen(modal, closeBtn, openBtn, openNext, codeModal) {
+  function newPassModalOpen(modal, closeBtn, openBtn) {
     openBtn.addEventListener('click', function () {
       modal.classList.add('active');
     });
     closeBtn.addEventListener('click', function () {
       modal.classList.remove('active');
-    });
-
-    openNext.addEventListener('click', function () {
-      modal.classList.remove('active');
-      codeModal.classList.add('active');
     });
 
     modal.addEventListener('click', function (e) {
@@ -187,7 +160,7 @@ if (document.querySelector('.sign-modal')) {
     });
   }
 
-  newPassModalOpen(_vars.signModal, _vars.signModalClose, _vars.signModalOpen, _vars.signNext, _vars.signEnterCodeModal);
+  newPassModalOpen(_vars.signModal, _vars.signModalClose, _vars.signModalOpen);
 }
 
 

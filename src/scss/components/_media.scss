@@ -1271,9 +1271,10 @@
       &__content {
         padding: 20px 0;
         border: unset;
-          & .seller-profile__review {
-            padding: 17px 0;
-          }
+
+        & .seller-profile__review {
+          padding: 17px 0;
+        }
       }
 
       &__statistic-review {
@@ -1401,6 +1402,20 @@
     &__rights {
       max-width: 290px;
       text-align: center;
+    }
+  }
+
+  .sign-modal {
+    &__tab-btn {
+
+      font-size: 14px;
+      line-height: 17px;
+      height: 60px;
+      padding: 0 25px;
+    }
+
+    &__tab-content {
+      padding: 30px 25px;
     }
   }
 }

@@ -257,8 +257,8 @@
         </p>
         <form class="restore-pass__enter-code__form s-modal__form" action="#">
           <div class="enter-code__input-outer input-outer">
-            <input class="enter-code__input input input-reset" type="text" id="restore-code" data-validate-field="restoreEnterCode"
-              name="restoreEnterCode">
+            <input class="enter-code__input input input-reset" type="text" id="restore-code"
+              data-validate-field="restoreEnterCode" name="restoreEnterCode">
             <button class="input-new btn-reset" type="submit">Получить новый код</button>
           </div>
           <button class="restore-pass__enter-code__btn s-modal__link s-modal__width col-btn btn-reset">
@@ -286,8 +286,8 @@
         </p>
         <form class="sign-modal__enter-code__form s-modal__form" action="#">
           <div class="enter-code__input-outer input-outer">
-            <input class="enter-code__input input input-reset" type="text" id="sign-code" data-validate-field="signEnterCode"
-              name="signEnterCode">
+            <input class="enter-code__input input input-reset" type="text" id="sign-code"
+              data-validate-field="signEnterCode" name="signEnterCode">
             <button class="input-new btn-reset" type="submit">Получить новый код</button>
           </div>
           <button class="sign-modal__enter-code__btn s-modal__link s-modal__width col-btn btn-reset">
@@ -334,38 +334,62 @@
             <use xlink:href="img/sprite.svg#close"></use>
           </svg>
         </button>
-        <h3 class="sign-modal__title s-modal__title hThr">
-          Войти или<br>
-          зарегистрироваться
-        </h3>
-        <form class="sign-modal__form s-modal__form">
-          <label class="sign-modal__input-outer input-outer">
-            <input class="sign-modal__input input input-reset" type="text" placeholder="Телефон или e-mail"
-              data-validate-field="signInput" name="signInput">
-          </label>
-          <button class="sign-modal__btn s-modal__link s-modal__width col-btn btn-reset">
-            Получить код
+
+        <div class="sign-modal__tab-btn-outer">
+          <button class="sign-modal__tab-btn btn-reset" data-sign="#sign-1">
+            Вход
           </button>
-          <div class="block">
-            <label class="checkbox-outer">
-              <input class="checkbox" type="checkbox">
-              <span class="checkbox-style"></span>
-              <span class="checkbox-text">
-                Чужой компьютер
-              </span>
-            </label>
-            <div class="checkbox-outer">
-              <label class="checkbox-outer">
-                <input class="checkbox sogl-check" type="checkbox" data-validate-field="signCheckbox" name="signCheckbox">
-                <span class="checkbox-style"></span>
-                <span class="checkbox-text">
-                  Согласен с условиями <a class="checkbox-link" href="#">Правил пользования торговойплощадкой</a> и <a
-                    class="checkbox-link" href="#">Правилами возврата</a>
-                </span>
+          <button class="sign-modal__tab-btn btn-reset" data-sign="#sign-2">
+            Регистрация
+          </button>
+        </div>
+
+        <div class="sign-modal__tab-content-outer">
+          <div class="sign-modal__tab-content" id="sign-1">
+            <form class="sign-modal__form s-modal__form">
+              <label class="sign-modal__input-outer input-outer">
+                <input class="sign-modal__input input input-reset" type="text" placeholder="Номер телефона"
+                  data-validate-field="signInputOne" name="signInputOne">
               </label>
-            </div>
+              <label class="sign-modal__input-outer input-outer">
+                <input class="sign-modal__input input input-reset" type="password" placeholder="Пароль"
+                  data-validate-field="signInputTwo" name="signInputTwo">
+              </label>
+              <div class="flex">
+                <label class="checkbox-outer">
+                  <input class="checkbox" type="checkbox">
+                  <span class="checkbox-style"></span>
+                  <span class="checkbox-text">
+                    Чужой компьютер
+                  </span>
+                </label>
+                <button class="sign-modal__forgot btn-reset">Забыли пароль?</button>
+              </div>
+              <button class="sign-modal__btn col-btn btn-reset" type="submit">Вход</button>
+            </form>
           </div>
-        </form>
+          <div class="sign-modal__tab-content" id="sign-2">
+            <form class="sign-modal__form reg-form s-modal__form">
+              <label class="sign-modal__input-outer input-outer">
+                <input class="sign-modal__input input input-reset" type="text" placeholder="Имя Фамилия"
+                  data-validate-field="signInputThr" name="signInputThr">
+              </label>
+              <label class="sign-modal__input-outer input-outer">
+                <input class="sign-modal__input input input-reset" type="text" placeholder="Номер телефона"
+                  data-validate-field="signInputFour" name="signInputFour">
+              </label>
+              <label class="sign-modal__input-outer input-outer">
+                <input class="sign-modal__input input input-reset" type="password" placeholder="Пароль"
+                  data-validate-field="signInputFive" name="signInputFive">
+              </label>
+              <label class="sign-modal__input-outer input-outer">
+                <input class="sign-modal__input input input-reset" type="password" placeholder="Повторный пароль"
+                  data-validate-field="signInputSix" name="signInputSix">
+              </label>
+              <button class="sign-modal__btn reg-btn col-btn btn-reset" type="submit">Зарегистрироваться</button>
+            </form>
+          </div>
+        </div>
       </div>
     </div>
   </div>
@@ -415,7 +439,7 @@
               Женщинам
             </div>
             <div class="seller-catalog__card-img-outer">
-                <img loading="lazy" src="img/catalog-card-1.png" class="image" width="100" height="100" alt="img">
+              <img loading="lazy" src="img/catalog-card-1.png" class="image" width="100" height="100" alt="img">
             </div>
           </a>
         </div>
@@ -428,7 +452,7 @@
               Мужчинам
             </div>
             <div class="seller-catalog__card-img-outer">
-                <img loading="lazy" src="img/catalog-card-2.png" class="image" width="100" height="100" alt="img">
+              <img loading="lazy" src="img/catalog-card-2.png" class="image" width="100" height="100" alt="img">
             </div>
           </a>
         </div>
@@ -441,7 +465,7 @@
               Детям
             </div>
             <div class="seller-catalog__card-img-outer">
-                <img loading="lazy" src="img/catalog-card-3.png" class="image" width="100" height="100" alt="img">
+              <img loading="lazy" src="img/catalog-card-3.png" class="image" width="100" height="100" alt="img">
             </div>
           </a>
         </div>
@@ -454,7 +478,7 @@
               Красота и Здоровье
             </div>
             <div class="seller-catalog__card-img-outer">
-                <img loading="lazy" src="img/catalog-card-4.png" class="image" width="100" height="100" alt="img">
+              <img loading="lazy" src="img/catalog-card-4.png" class="image" width="100" height="100" alt="img">
             </div>
           </a>
         </div>
@@ -467,7 +491,7 @@
               Товары для дома
             </div>
             <div class="seller-catalog__card-img-outer">
-                <img loading="lazy" src="img/catalog-card-5.png" class="image" width="100" height="100" alt="img">
+              <img loading="lazy" src="img/catalog-card-5.png" class="image" width="100" height="100" alt="img">
             </div>
           </a>
         </div>
@@ -480,7 +504,7 @@
               Детские товары
             </div>
             <div class="seller-catalog__card-img-outer">
-                <img loading="lazy" src="img/catalog-card-6.png" class="image" width="100" height="100" alt="img">
+              <img loading="lazy" src="img/catalog-card-6.png" class="image" width="100" height="100" alt="img">
             </div>
           </a>
         </div>
@@ -493,7 +517,7 @@
               Бытовая техника
             </div>
             <div class="seller-catalog__card-img-outer">
-                <img loading="lazy" src="img/catalog-card-7.png" class="image" width="100" height="100" alt="img">
+              <img loading="lazy" src="img/catalog-card-7.png" class="image" width="100" height="100" alt="img">
             </div>
           </a>
         </div>
@@ -506,7 +530,7 @@
               Хобби и творчество
             </div>
             <div class="seller-catalog__card-img-outer">
-                <img loading="lazy" src="img/catalog-card-8.png" class="image" width="100" height="100" alt="img">
+              <img loading="lazy" src="img/catalog-card-8.png" class="image" width="100" height="100" alt="img">
             </div>
           </a>
         </div>
@@ -519,7 +543,7 @@
               Украшения и аксессуары
             </div>
             <div class="seller-catalog__card-img-outer">
-                <img loading="lazy" src="img/catalog-card-9.png" class="image" width="100" height="100" alt="img">
+              <img loading="lazy" src="img/catalog-card-9.png" class="image" width="100" height="100" alt="img">
             </div>
           </a>
         </div>
@@ -532,7 +556,7 @@
               Продукты питания
             </div>
             <div class="seller-catalog__card-img-outer">
-                <img loading="lazy" src="img/catalog-card-10.png" class="image" width="100" height="100" alt="img">
+              <img loading="lazy" src="img/catalog-card-10.png" class="image" width="100" height="100" alt="img">
             </div>
           </a>
         </div>
@@ -545,7 +569,7 @@
               Спортивные товары
             </div>
             <div class="seller-catalog__card-img-outer">
-                <img loading="lazy" src="img/catalog-card-11.png" class="image" width="100" height="100" alt="img">
+              <img loading="lazy" src="img/catalog-card-11.png" class="image" width="100" height="100" alt="img">
             </div>
           </a>
         </div>
@@ -558,7 +582,7 @@
               Канцелярские товары
             </div>
             <div class="seller-catalog__card-img-outer">
-                <img loading="lazy" src="img/catalog-card-12.png" class="image" width="100" height="100" alt="img">
+              <img loading="lazy" src="img/catalog-card-12.png" class="image" width="100" height="100" alt="img">
             </div>
           </a>
         </div>
@@ -571,7 +595,7 @@
               Бытовая химия
             </div>
             <div class="seller-catalog__card-img-outer">
-                <img loading="lazy" src="img/catalog-card-13.png" class="image" width="100" height="100" alt="img">
+              <img loading="lazy" src="img/catalog-card-13.png" class="image" width="100" height="100" alt="img">
             </div>
           </a>
         </div>
@@ -584,7 +608,7 @@
               Зоотовары
             </div>
             <div class="seller-catalog__card-img-outer">
-                <img loading="lazy" src="img/catalog-card-14.png" class="image" width="100" height="100" alt="img">
+              <img loading="lazy" src="img/catalog-card-14.png" class="image" width="100" height="100" alt="img">
             </div>
           </a>
         </div>

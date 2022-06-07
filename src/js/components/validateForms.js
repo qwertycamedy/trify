@@ -6,7 +6,12 @@ let validateForms = function (selector, rules) {
       enterCode: 'Это поле обязательно для заполнения',
       newPassOld: 'Это поле обязательно для заполнения',
       newPassNew: 'Это поле обязательно для заполнения',
-      signInput: 'Это поле обязательно для заполнения',
+      signInputOne: 'Это поле обязательно для заполнения',
+      signInputTwo: 'Это поле обязательно для заполнения',
+      signInputThr: 'Это поле обязательно для заполнения',
+      signInputFour: 'Это поле обязательно для заполнения',
+      signInputFive: 'Это поле обязательно для заполнения',
+      signInputSix: 'Это поле обязательно для заполнения',
       enterCode: 'Это поле обязательно для заполнения',
     },
   });
@@ -38,10 +43,25 @@ validateForms('.new-pass__form', {
   },
 });
 validateForms('.sign-modal__form', {
-  signInput: {
+  signInputOne: {
     required: true,
   },
-  signCheckbox: {
+  signInputTwo: {
     required: true,
   },
 });
+validateForms('.reg-form', {
+  signInputThr: {
+    required: true,
+  },
+  signInputFour: {
+    required: true,
+  },
+  signInputFive: {
+    required: true,
+  },
+  signInputSix: {
+    required: true,
+  },
+});
+ 
