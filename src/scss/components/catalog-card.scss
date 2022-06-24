@@ -102,6 +102,7 @@
     &.active {
       & .catalog__acc-list {
         opacity: 1;
+        padding-top: 20px;
       }
 
       & .catalog__acc-btn {
@@ -126,7 +127,7 @@
     }
 
     &-list {
-      padding-top: 12px;
+      padding-left: 21px;
       max-height: 0;
       opacity: 0;
       overflow: hidden;
@@ -136,7 +137,7 @@
 
       &-item {
         &:not(:last-child) {
-          margin-bottom: 7px;
+          margin-bottom: 15px;
         }
       }
 
